@@ -51,7 +51,6 @@ export function clearMarkers() {
 }
 
 export async function fetchFilteredAccommodations(type_filter, board_filter, feature_filter, theme_filter) {
-    //alert("Fetch filtered data");
     try {
         const params = {
 			pagenumber: 1,
@@ -66,7 +65,6 @@ export async function fetchFilteredAccommodations(type_filter, board_filter, fea
         
         const response = await callGet("/Accommodation", params);
         console.log("Fetched Filtered Accommodations: ", response);
-        //alert("GET method is working correctly!");
         return response;
 
     } catch (e) {

@@ -102,7 +102,6 @@ class MapWidget extends LitElement {
 
   
   async drawMapWithFilters(type_filter, board_filter, feature_filter, theme_filter) {
-    //alert("In map drawing process");
     var data = await fetchFilteredAccommodations(type_filter, board_filter, feature_filter, theme_filter);  
   
     let columns_layer_array = [];

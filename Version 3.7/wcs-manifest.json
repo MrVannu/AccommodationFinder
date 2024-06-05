@@ -45,20 +45,10 @@
         "required": true,
         "options": {
           "values": [
-            "de-DE",
             "en-US",
             "it-IT"
           ],
           "default": "en-US"
-        }
-      },
-      {
-        "key": "display-accommodations",
-        "type": "bool",
-        "label": "Display Nearby Accommodations",
-        "required": false,
-        "options": {
-          "default": false
         }
       }
     ]

@@ -34,13 +34,14 @@
             dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
         }
 
+        // Filters are currently empty since the features are not open data
         var categories = {
-            "1": [{value: '16', text: 'All inclusive'}, {value: '512', text: 'Pets allowed'}, {value: '1', text: 'Gourmet Food'}],
-            "2": [{value: '512', text: 'Pets allowed'}, {value: '128', text: 'Urban vibes'}],
-            "8": [{value: '2', text: 'Breakfast offered'}, {value: '4', text: 'Swimming pool'}, {value: '32', text: 'Hiking'}],
-            "4": [{value: '2', text: 'Breakfast offered'}, {value: '64', text: 'WiFi'}, {value: '1024', text: 'Dolomites'}],
-            "32": [{value: '4', text: 'Half board'}, {value: '64', text: 'WiFi'}, {value: '256', text: 'Ski Resort'}],
-            "64": [{value: '16', text: 'Garage'}, {value: '128', text: 'Urban vibes'}]
+            "1": [{value: '', text: 'All results'}],
+            "2": [{value: '', text: 'All results'}],
+            "8": [{value: '', text: 'All results'}],
+            "4": [{value: '', text: 'All results'}],
+            "32": [{value: '', text: 'All results'}],
+            "64": [{value: '16', text: 'Garage'}]
         };
 
         
@@ -97,7 +98,6 @@
 
                 if(selectedValue == 2 || selectedValue == 64){
                     mapWidget.drawMapWithFilters(selectedValue, null, selectedCheckboxes[1], selectedCheckboxes[2]);
-                    //alert(selectedCheckboxes[1]);
                 } else {
                     mapWidget.drawMapWithFilters(selectedValue, selectedCheckboxes[0], selectedCheckboxes[1], selectedCheckboxes[2]);
                 }
